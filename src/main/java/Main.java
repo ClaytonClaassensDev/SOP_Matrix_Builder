@@ -10,7 +10,7 @@ import java.io.IOException;
 
 class PDFBoxExample {
     public static void main(String[] args) throws IOException {
-        File folder = new File("C:\\Users\\claytonc\\OneDrive - The Biovac Institute\\Desktop\\TEST MATRIX");
+        File folder = new File("folder location");
         File[] listOfFiles = folder.listFiles();
 
         // Create a new Excel workbook
@@ -59,7 +59,7 @@ class PDFBoxExample {
         }
 
         // Write the workbook to a file
-        FileOutputStream fileOut = new FileOutputStream("C:\\Users\\claytonc\\OneDrive - The Biovac Institute\\Desktop\\TEST MATRIX\\ReferencedDocuments.xlsx");
+        FileOutputStream fileOut = new FileOutputStream("output.xlsx");
         workbook.write(fileOut);
         fileOut.close();
         workbook.close();
